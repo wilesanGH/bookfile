@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-09T02:45:17.135Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="l2ycdgYbsAZJ1Abi_c_J" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-09T02:45:47.039Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="ncAmbOKRjHU4PD9hy8Sl" version="16.2.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2249" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -89,8 +89,8 @@
         <mxCell id="xtG7sQjpP8ihAD4wLwW2-3" value="入库&lt;br&gt;对采购人员提交的入库申请进行确认入库&lt;br&gt;&lt;ul&gt;&lt;li&gt;入库数量&amp;lt;=申请数量&lt;br&gt;&lt;/li&gt;&lt;li&gt;入库数量 + 已入库数量 &amp;lt;=采购数量&lt;/li&gt;&lt;li&gt;直发客户：入直接仓，其它入非直接仓&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff1f0f&quot;&gt;已经有部分采购的、入过仓的、则仓库必须为之前入过的仓库&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;font color=&quot;#ff1008&quot;&gt;入库后，&lt;br&gt;1、已入库数量==采购数量 对应采购单条物料修改为采购完成，否则为部分采购&lt;br&gt;2、销售单的采购完成，没法自动判断，物料会有修改，无法用销售单物料来对比，需要人员判断是不是全部采购完成（自动判断采购状态只能具体到采购订单的单个物料采购情况）&lt;br&gt;3、入库的物料对应的采购单全部为采购完成则直接进入到可发货状态，（没有具体到每一个物料发货影响库存计算）去除我要发货流程&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;gradientColor=#ffd966;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="538.13" y="590" width="441.87" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="xtG7sQjpP8ihAD4wLwW2-7" value="发货&lt;br&gt;1、发货没有具体到单个物料，没法计算库存情况，目前必须对单个采购单全部发货&lt;br&gt;2、销售单对的就物料是否全部发货，无法自己判断还是需要人为的判断（物料与原始的销售单物料有差别）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;gradientColor=#ffd966;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="580" y="340" width="320" height="140" as="geometry" />
+        <mxCell id="xtG7sQjpP8ihAD4wLwW2-7" value="发货&lt;br&gt;&lt;font color=&quot;#ff1008&quot;&gt;1、发货没有具体到单个物料，没法计算库存情况，目前必须对单个采购单全部发货&lt;br&gt;2、销售单对的就物料是否全部发货，无法自己判断还是需要人为的判断（物料与原始的销售单物料有差别）&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;gradientColor=#ffd966;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="599.07" y="330" width="320" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
